@@ -2,31 +2,14 @@ package com.nibuton.intech.publisher.generator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.Random;
-import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-import java.util.function.Predicate;
 
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.util.ReflectionTestUtils;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.context.WebApplicationContext;
 
-import com.nibuton.intech.publisher.config.PublisherConfig;
 import com.nibuton.intech.publisher.entity.Message;
-import com.nibuton.intech.publisher.rest.MessageSender;
-import com.nibuton.intech.publisher.rest.ObjectToJsonBuilder;
 
 class MessageGeneratorTest {
 	

@@ -1,6 +1,5 @@
 package com.nibuton.intech.publisher.generator;
 
-import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ThreadLocalRandom;
 

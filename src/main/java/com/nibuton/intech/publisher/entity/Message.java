@@ -1,6 +1,5 @@
 package com.nibuton.intech.publisher.entity;
 
-import java.sql.Timestamp;
 
 public class Message {
 	
