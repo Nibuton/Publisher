@@ -13,8 +13,9 @@ class ObjectToJsonBuilderImplTest {
 		ObjectToJsonBuilderImpl objectToJsonBuilderImpl = new ObjectToJsonBuilderImpl();
 		Message msg = new Message(1, 100L, "test");
 		String result = objectToJsonBuilderImpl.buildJsonString(msg);
-		String expected = "{\"id\":0,\"msisdn\":1,\"timestamp\":100,\"action\":\"test\"}";
-		assertTrue(result.equals(expected));
+		assertTrue(result.contains("\"msisdn\":1"));
+		assertTrue(result.contains("\"timestamp\":100"));
+		assertTrue(result.contains("\"action\":\"test\""));
 	}
 
 }

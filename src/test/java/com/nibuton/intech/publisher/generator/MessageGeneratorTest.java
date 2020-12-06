@@ -31,8 +31,6 @@ class MessageGeneratorTest {
 		ReflectionTestUtils.setField(generator, "actions", actions);
 		msg1 = generator.generate();
 		msg2 = generator.generate();
-		System.out.println(msg1);
-		System.out.println(msg2);
 	}
 	
 	@Test
