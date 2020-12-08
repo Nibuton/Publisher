@@ -3,6 +3,8 @@ package com.nibuton.intech.publisher.generator;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ThreadLocalRandom;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -20,6 +22,7 @@ public class MessageGenerator implements Generator<Message>, Runnable{
 	 * Массив доступных значений поля action. Поле Action содержится в сообщении.
 	 * Inject через setter из application.properties
 	 */
+	
 	private String[] actions;
 	
 	/**
@@ -27,6 +30,8 @@ public class MessageGenerator implements Generator<Message>, Runnable{
 	 */
 	
 	private BlockingQueue<Message> queue;
+	
+	Logger logger = LoggerFactory.getLogger(MessageGenerator.class);
 	
 	@Autowired
 	public MessageGenerator(BlockingQueue<Message> queue) {
@@ -37,6 +42,7 @@ public class MessageGenerator implements Generator<Message>, Runnable{
 	 * Метод для генерации сообщений
 	 * @return Сгенерированный экземпляр Message
 	 */
+	
 	@Override
 	public Message generate() {
 		Message msg = new Message();
@@ -53,7 +59,9 @@ public class MessageGenerator implements Generator<Message>, Runnable{
 		while(true) {
 			try {
 				Message msg = generate();
+				logger.debug("Genearated message: " + msg);
 				queue.put(msg);
+				logger.debug("Put message in queue: " + msg);
 			} catch (InterruptedException e) {
 				Thread.currentThread().interrupt();
 			}

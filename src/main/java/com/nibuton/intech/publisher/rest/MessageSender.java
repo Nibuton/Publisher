@@ -8,6 +8,8 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -26,6 +28,8 @@ public class MessageSender implements Sender<Message>{
 	
 	private String postUrl;
 	
+	Logger logger = LoggerFactory.getLogger(MessageSender.class);
+	
 	@Autowired
 	public MessageSender(ObjectToJsonBuilder<Message> objectToJsonBuilder) {
 		this.objectToJsonBuilder = objectToJsonBuilder;
@@ -42,14 +46,17 @@ public class MessageSender implements Sender<Message>{
 			StringEntity postingString = new StringEntity(objectToJsonBuilder.buildJsonString(msg));
 			post.setEntity(postingString);
 			post.setHeader("Content-type", "application/json");
-			System.out.println(msg);
+			logger.info(post.toString());
 			HttpResponse response = httpClient.execute(post);
+			logger.info(response.toString());
 		}
 		catch (UnsupportedEncodingException e1){
 			e1.printStackTrace();
+			logger.error(e1.getMessage());
 		}
 		catch (IOException e2) {
 			e2.printStackTrace();
+			logger.error(e2.getMessage());
 		}
 	}
 

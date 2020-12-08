@@ -1,0 +1,96 @@
+2020-12-09 01:09:34.043  INFO 895 --- [restartedMain] c.n.i.publisher.PublisherApplication     : Starting PublisherApplication using Java 1.8.0_241 on nibuton-Lenovo-G505s with PID 895 (/home/nibuton/Рабочий стол/intech_test_task/intech/publisher/target/classes started by nibuton in /home/nibuton/Рабочий стол/intech_test_task/intech/publisher)
+2020-12-09 01:09:34.056 DEBUG 895 --- [restartedMain] c.n.i.publisher.PublisherApplication     : Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-12-09 01:09:34.058  INFO 895 --- [restartedMain] c.n.i.publisher.PublisherApplication     : No active profile set, falling back to default profiles: default
+2020-12-09 01:09:34.348  INFO 895 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-09 01:09:34.350  INFO 895 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-09 01:09:38.416  INFO 895 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7900 (http)
+2020-12-09 01:09:38.508  INFO 895 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-09 01:09:38.509  INFO 895 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-09 01:09:38.714  INFO 895 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-09 01:09:38.715  INFO 895 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4363 ms
+2020-12-09 01:09:39.014 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=0msisdn=41628304, timestamp=1607458179013, action=PURCHASE]
+2020-12-09 01:09:39.016 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=0msisdn=41628304, timestamp=1607458179013, action=PURCHASE]
+2020-12-09 01:09:39.016 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=1msisdn=4905727, timestamp=1607458179016, action=SUBSCRIPTION]
+2020-12-09 01:09:39.017 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=1msisdn=4905727, timestamp=1607458179016, action=SUBSCRIPTION]
+2020-12-09 01:09:39.017 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=2msisdn=3694672, timestamp=1607458179017, action=SUBSCRIPTION]
+2020-12-09 01:09:39.018 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=2msisdn=3694672, timestamp=1607458179017, action=SUBSCRIPTION]
+2020-12-09 01:09:39.019 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=3msisdn=45891579, timestamp=1607458179019, action=SUBSCRIPTION]
+2020-12-09 01:09:39.019 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=3msisdn=45891579, timestamp=1607458179019, action=SUBSCRIPTION]
+2020-12-09 01:09:39.020 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=4msisdn=6025299, timestamp=1607458179020, action=PURCHASE]
+2020-12-09 01:09:39.020 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=4msisdn=6025299, timestamp=1607458179020, action=PURCHASE]
+2020-12-09 01:09:39.020 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=5msisdn=82707206, timestamp=1607458179020, action=SUBSCRIPTION]
+2020-12-09 01:09:39.021 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=5msisdn=82707206, timestamp=1607458179020, action=SUBSCRIPTION]
+2020-12-09 01:09:39.021 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=6msisdn=23097263, timestamp=1607458179021, action=SUBSCRIPTION]
+2020-12-09 01:09:39.022 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=6msisdn=23097263, timestamp=1607458179021, action=SUBSCRIPTION]
+2020-12-09 01:09:39.022 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=7msisdn=92677163, timestamp=1607458179022, action=SUBSCRIPTION]
+2020-12-09 01:09:39.022 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=7msisdn=92677163, timestamp=1607458179022, action=SUBSCRIPTION]
+2020-12-09 01:09:39.023 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=8msisdn=81695329, timestamp=1607458179023, action=PURCHASE]
+2020-12-09 01:09:39.023 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=8msisdn=81695329, timestamp=1607458179023, action=PURCHASE]
+2020-12-09 01:09:39.024 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=9msisdn=72769439, timestamp=1607458179024, action=SUBSCRIPTION]
+2020-12-09 01:09:39.024 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=9msisdn=72769439, timestamp=1607458179024, action=SUBSCRIPTION]
+2020-12-09 01:09:39.024 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=10msisdn=83001049, timestamp=1607458179024, action=PURCHASE]
+2020-12-09 01:09:40.021 DEBUG 895 --- [pool-1-thread-1] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=0msisdn=41628304, timestamp=1607458179013, action=PURCHASE]
+2020-12-09 01:09:40.027 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=10msisdn=83001049, timestamp=1607458179024, action=PURCHASE]
+2020-12-09 01:09:40.027 DEBUG 895 --- [pool-1-thread-2] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=1msisdn=4905727, timestamp=1607458179016, action=SUBSCRIPTION]
+2020-12-09 01:09:40.027 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=11msisdn=29344738, timestamp=1607458180027, action=PURCHASE]
+2020-12-09 01:09:40.028 DEBUG 895 --- [pool-1-thread-3] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=2msisdn=3694672, timestamp=1607458179017, action=SUBSCRIPTION]
+2020-12-09 01:09:40.029 DEBUG 895 --- [pool-1-thread-4] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=3msisdn=45891579, timestamp=1607458179019, action=SUBSCRIPTION]
+2020-12-09 01:09:40.031 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=11msisdn=29344738, timestamp=1607458180027, action=PURCHASE]
+2020-12-09 01:09:40.032 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=12msisdn=63583680, timestamp=1607458180032, action=PURCHASE]
+2020-12-09 01:09:40.032 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=12msisdn=63583680, timestamp=1607458180032, action=PURCHASE]
+2020-12-09 01:09:40.032 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=13msisdn=79242811, timestamp=1607458180032, action=SUBSCRIPTION]
+2020-12-09 01:09:40.033 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=13msisdn=79242811, timestamp=1607458180032, action=SUBSCRIPTION]
+2020-12-09 01:09:40.033 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=14msisdn=85485192, timestamp=1607458180033, action=PURCHASE]
+2020-12-09 01:09:40.033 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=14msisdn=85485192, timestamp=1607458180033, action=PURCHASE]
+2020-12-09 01:09:40.034 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=15msisdn=15188551, timestamp=1607458180034, action=SUBSCRIPTION]
+2020-12-09 01:09:40.046 DEBUG 895 --- [pool-1-thread-5] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=4msisdn=6025299, timestamp=1607458179020, action=PURCHASE]
+2020-12-09 01:09:40.858  INFO 895 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 01:09:42.433  WARN 895 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-12-09 01:09:42.702  INFO 895 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 7900 (http) with context path ''
+2020-12-09 01:09:42.764  INFO 895 --- [restartedMain] c.n.i.publisher.PublisherApplication     : Started PublisherApplication in 13.021 seconds (JVM running for 17.64)
+2020-12-09 01:09:42.961  INFO 895 --- [pool-1-thread-1] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:43.339  INFO 895 --- [pool-1-thread-1] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:43 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:43.340  INFO 895 --- [pool-1-thread-1] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=0msisdn=41628304, timestamp=1607458179013, action=PURCHASE] have been sent
+2020-12-09 01:09:43.347  INFO 895 --- [pool-1-thread-5] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:43.401  INFO 895 --- [pool-1-thread-5] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:43 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:43.402  INFO 895 --- [pool-1-thread-5] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=4msisdn=6025299, timestamp=1607458179020, action=PURCHASE] have been sent
+2020-12-09 01:09:43.407  INFO 895 --- [pool-1-thread-2] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:43.457  INFO 895 --- [pool-1-thread-2] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:43 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:43.457  INFO 895 --- [pool-1-thread-2] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=1msisdn=4905727, timestamp=1607458179016, action=SUBSCRIPTION] have been sent
+2020-12-09 01:09:43.460  INFO 895 --- [pool-1-thread-4] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:43.505  INFO 895 --- [pool-1-thread-4] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:43 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:43.506  INFO 895 --- [pool-1-thread-4] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=3msisdn=45891579, timestamp=1607458179019, action=SUBSCRIPTION] have been sent
+2020-12-09 01:09:43.508  INFO 895 --- [pool-1-thread-3] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:43.536  INFO 895 --- [pool-1-thread-3] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:43 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:43.537  INFO 895 --- [pool-1-thread-3] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=2msisdn=3694672, timestamp=1607458179017, action=SUBSCRIPTION] have been sent
+2020-12-09 01:09:58.340 DEBUG 895 --- [pool-1-thread-1] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=5msisdn=82707206, timestamp=1607458179020, action=SUBSCRIPTION]
+2020-12-09 01:09:58.340 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=15msisdn=15188551, timestamp=1607458180034, action=SUBSCRIPTION]
+2020-12-09 01:09:58.341 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=16msisdn=43808493, timestamp=1607458198341, action=PURCHASE]
+2020-12-09 01:09:58.343  INFO 895 --- [pool-1-thread-1] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:58.390  INFO 895 --- [pool-1-thread-1] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:58 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:58.391  INFO 895 --- [pool-1-thread-1] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=5msisdn=82707206, timestamp=1607458179020, action=SUBSCRIPTION] have been sent
+2020-12-09 01:09:58.402 DEBUG 895 --- [pool-1-thread-5] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=6msisdn=23097263, timestamp=1607458179021, action=SUBSCRIPTION]
+2020-12-09 01:09:58.405  INFO 895 --- [pool-1-thread-5] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:58.405 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=16msisdn=43808493, timestamp=1607458198341, action=PURCHASE]
+2020-12-09 01:09:58.408 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=17msisdn=98204937, timestamp=1607458198408, action=PURCHASE]
+2020-12-09 01:09:58.447  INFO 895 --- [pool-1-thread-5] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:58 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:58.448  INFO 895 --- [pool-1-thread-5] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=6msisdn=23097263, timestamp=1607458179021, action=SUBSCRIPTION] have been sent
+2020-12-09 01:09:58.458 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=17msisdn=98204937, timestamp=1607458198408, action=PURCHASE]
+2020-12-09 01:09:58.458 DEBUG 895 --- [pool-1-thread-2] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=7msisdn=92677163, timestamp=1607458179022, action=SUBSCRIPTION]
+2020-12-09 01:09:58.458 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=18msisdn=30137621, timestamp=1607458198458, action=PURCHASE]
+2020-12-09 01:09:58.461  INFO 895 --- [pool-1-thread-2] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:58.493  INFO 895 --- [pool-1-thread-2] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:58 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:58.494  INFO 895 --- [pool-1-thread-2] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=7msisdn=92677163, timestamp=1607458179022, action=SUBSCRIPTION] have been sent
+2020-12-09 01:09:58.506 DEBUG 895 --- [pool-1-thread-4] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=8msisdn=81695329, timestamp=1607458179023, action=PURCHASE]
+2020-12-09 01:09:58.506 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=18msisdn=30137621, timestamp=1607458198458, action=PURCHASE]
+2020-12-09 01:09:58.507 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=19msisdn=87019690, timestamp=1607458198507, action=PURCHASE]
+2020-12-09 01:09:58.509  INFO 895 --- [pool-1-thread-4] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:58.535  INFO 895 --- [pool-1-thread-4] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:58 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:58.535  INFO 895 --- [pool-1-thread-4] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=8msisdn=81695329, timestamp=1607458179023, action=PURCHASE] have been sent
+2020-12-09 01:09:58.537 DEBUG 895 --- [pool-1-thread-3] c.n.i.publisher.rest.MessageSendTask     : Took msg from queue: Message [id=9msisdn=72769439, timestamp=1607458179024, action=SUBSCRIPTION]
+2020-12-09 01:09:58.540  INFO 895 --- [pool-1-thread-3] c.n.intech.publisher.rest.MessageSender  : POST http://localhost:8000 HTTP/1.1
+2020-12-09 01:09:58.541 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Put message in queue: Message [id=19msisdn=87019690, timestamp=1607458198507, action=PURCHASE]
+2020-12-09 01:09:58.542 DEBUG 895 --- [Thread-5] c.n.i.p.generator.MessageGenerator       : Genearated message: Message [id=20msisdn=5112428, timestamp=1607458198542, action=SUBSCRIPTION]
+2020-12-09 01:09:58.573  INFO 895 --- [pool-1-thread-3] c.n.intech.publisher.rest.MessageSender  : HttpResponseProxy{HTTP/1.1 200  [Content-Type: application/json, Transfer-Encoding: chunked, Date: Tue, 08 Dec 2020 20:09:58 GMT, Keep-Alive: timeout=60, Connection: keep-alive] ResponseEntityProxy{[Content-Type: application/json,Chunked: true]}}
+2020-12-09 01:09:58.573  INFO 895 --- [pool-1-thread-3] c.n.i.publisher.rest.MessageSendTask     : Message Message [id=9msisdn=72769439, timestamp=1607458179024, action=SUBSCRIPTION] have been sent
+2020-12-09 01:10:07.607  INFO 895 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
