@@ -20,6 +20,11 @@ import com.nibuton.intech.publisher.rest.MessageSendTask;
 import com.nibuton.intech.publisher.rest.ObjectToJsonBuilder;
 import com.nibuton.intech.publisher.rest.Sender;
 
+/**
+ * Класс, содержащий Beans и логику запуска сообщений
+ * @author nibuton
+ *
+ */
 @Configuration
 public class PublisherConfig {
 	
@@ -28,14 +33,24 @@ public class PublisherConfig {
 		return new ArrayBlockingQueue<Message>(10,true);
 	}
 	
+	/**
+	 * <p>
+	 * Метод содержит логику запуска. Генерируется начальное наполнение очереди сообщениями, после чего
+	 * создается пул из 5 потоков, в каждый из которых передается задание на отправку сообщения.
+	 * </p>
+	 * @param generator Генератор сообщений
+	 * @param sender Отправщик сообщений
+	 * @param queue Блокирующая очередь сообщений для многопоточной отправки из FixedThreadPool
+	 * @return empty args
+	 */
 	@Bean
 	CommandLineRunner startThreads(MessageGenerator generator, Sender<Message> sender, 
-		ObjectToJsonBuilder<Message> objectToJsonBuilder, BlockingQueue<Message> queue) {
+		BlockingQueue<Message> queue) {
 		
 		Thread generatingThread = new Thread(generator);
 		generatingThread.start();
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 		} catch (InterruptedException e1) {
 			e1.printStackTrace();
 		}

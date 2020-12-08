@@ -4,6 +4,11 @@ import java.util.concurrent.BlockingQueue;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+/**
+ * Класс, инкапсулирующий в себе задание по отправке сообщения для запуска в потоке.
+ * @author nibuton
+ */
+
 import com.nibuton.intech.publisher.entity.Message;
 
 public class MessageSendTask implements Runnable{

@@ -9,10 +9,22 @@ import org.springframework.stereotype.Component;
 
 import com.nibuton.intech.publisher.entity.Message;
 
+/**
+ * Класс генератора сообщений.
+ * @author nibuton
+ */
 @Component
 public class MessageGenerator implements Generator<Message>, Runnable{
 	
+	/**
+	 * Массив доступных значений поля action. Поле Action содержится в сообщении.
+	 * Inject через setter из application.properties
+	 */
 	private String[] actions;
+	
+	/**
+	 * Блокирующая очередь, в которой хранятся сгенерированные сообщения
+	 */
 	
 	private BlockingQueue<Message> queue;
 	
@@ -20,7 +32,11 @@ public class MessageGenerator implements Generator<Message>, Runnable{
 	public MessageGenerator(BlockingQueue<Message> queue) {
 		this.queue = queue;
 	}
-
+	
+	/**
+	 * Метод для генерации сообщений
+	 * @return Сгенерированный экземпляр Message
+	 */
 	@Override
 	public Message generate() {
 		Message msg = new Message();
@@ -29,7 +45,9 @@ public class MessageGenerator implements Generator<Message>, Runnable{
 		msg.setAction(actions[ThreadLocalRandom.current().nextInt(2)]);
 		return msg;
 	}
-
+	/**
+	 * Метод для запуска генератора в потоке. Генерирует сообщение и кладет его в очередь.
+	 */
 	@Override
 	public void run() {
 		while(true) {

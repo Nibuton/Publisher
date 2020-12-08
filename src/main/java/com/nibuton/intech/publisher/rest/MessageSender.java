@@ -13,6 +13,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import com.nibuton.intech.publisher.entity.Message;
 
+/**
+ * Класс реализующий логику отправки сообщений.
+ * 
+ * @author nibuton
+ *
+ */
 @Component
 public class MessageSender implements Sender<Message>{
 	
@@ -25,6 +31,9 @@ public class MessageSender implements Sender<Message>{
 		this.objectToJsonBuilder = objectToJsonBuilder;
 	}
 
+	/**
+	 *@param msg Сообщение
+	 */
 	@Override
 	public synchronized void send(Message msg) {
 		try { 

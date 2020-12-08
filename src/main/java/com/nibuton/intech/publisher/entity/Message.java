@@ -1,9 +1,18 @@
 package com.nibuton.intech.publisher.entity;
 
+/**
+ * Класс для объекта сообщения
+ * @author nibuton
+ */
 
 public class Message {
 	
+	/**
+	 * Счетчик количества созданных экземпляров. Используется для назначения id при генерации очередного 
+	 * сообщения. Используется несколькими потоками.
+	 */
 	private static volatile int instanceCounter = 0;
+	
 	private int id;
 	private int msisdn;
 	private Long timestamp;
