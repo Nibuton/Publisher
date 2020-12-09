@@ -7,6 +7,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -48,7 +49,8 @@ public class MessageSender implements Sender<Message>{
 			post.setHeader("Content-type", "application/json");
 			logger.info(post.toString());
 			HttpResponse response = httpClient.execute(post);
-			logger.info(response.toString());
+			String responseString = new BasicResponseHandler().handleResponse(response);
+			logger.info("Response: " + responseString + " statusline: " + response.getStatusLine());
 		}
 		catch (UnsupportedEncodingException e1){
 			e1.printStackTrace();
